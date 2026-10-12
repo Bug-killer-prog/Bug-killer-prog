@@ -69,9 +69,9 @@ function replaceSection(content, name, body) {
   return content.replace(pattern, `${start}\n${body}\n${end}`);
 }
 
-const merged = await search(`author:${username}+type:pr+is:merged`);
-const open = await search(`author:${username}+type:pr+is:open`);
-const all = await search(`author:${username}+type:pr`, 1);
+const merged = await search(`author:${username} type:pr is:merged`);
+const open = await search(`author:${username} type:pr is:open`);
+const all = await search(`author:${username} type:pr`, 1);
 
 const stats = [
   `![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${merged.total_count}-brightgreen)`,
