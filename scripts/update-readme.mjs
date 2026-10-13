@@ -71,20 +71,23 @@ function replaceSection(content, name, body) {
 
 const merged = await search(`author:${username} type:pr is:merged`);
 const open = await search(`author:${username} type:pr is:open`);
-const all = await search(`author:${username} type:pr`, 1);
+const closed = await search(`author:${username} type:pr is:closed is:unmerged`);
+const total = merged.total_count + open.total_count + closed.total_count;
 
 const stats = [
   `![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${merged.total_count}-brightgreen)`,
   `![Open PRs](https://img.shields.io/badge/Open%20PRs-${open.total_count}-blue)`,
-  `![Total PRs](https://img.shields.io/badge/Total%20PRs-${all.total_count}-lightgrey)`,
+  `![Closed PRs](https://img.shields.io/badge/Closed%20PRs-${closed.total_count}-lightgrey)`,
+  `![Total PRs](https://img.shields.io/badge/Total%20PRs-${total}-informational)`,
 ].join('\n');
 
 let readme = await readFile(readmePath, 'utf8');
 readme = replaceSection(readme, 'prstats', stats);
 readme = replaceSection(readme, 'prlist', renderList(merged.items));
 readme = replaceSection(readme, 'openprlist', renderList(open.items));
+readme = replaceSection(readme, 'closedprlist', renderList(closed.items));
 await writeFile(readmePath, readme, 'utf8');
 
 console.log(
-  `Updated ${readmePath}: merged=${merged.total_count}, open=${open.total_count}, total=${all.total_count}`,
+  `Updated ${readmePath}: merged=${merged.total_count}, open=${open.total_count}, closed=${closed.total_count}, total=${total}`,
 );
