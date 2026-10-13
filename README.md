@@ -7,7 +7,8 @@ Open-source enthusiast · automated bug-hunting with small, focused, well-tested
 <!--START_SECTION:prstats-->
 ![Merged PRs](https://img.shields.io/badge/Merged%20PRs-5-brightgreen)
 ![Open PRs](https://img.shields.io/badge/Open%20PRs-5-blue)
-![Total PRs](https://img.shields.io/badge/Total%20PRs-12-lightgrey)
+![Closed PRs](https://img.shields.io/badge/Closed%20PRs-2-lightgrey)
+![Total PRs](https://img.shields.io/badge/Total%20PRs-12-informational)
 <!--END_SECTION:prstats-->
 
 </div>
@@ -48,6 +49,20 @@ _Submitted and awaiting review._
 - [`QwenLM/qwen-code#13975`](https://github.com/QwenLM/qwen-code/pull/13975) — fix(core): strip a leading BOM before converting a TOML command
 - [`QwenLM/qwen-code#11807`](https://github.com/QwenLM/qwen-code/pull/11807) — fix(cli): strip UTF-8 BOM before parsing settings.json to avoid false corruption reset
 <!--END_SECTION:openprlist-->
+
+## 🗂️ Closed Without Merge
+
+<details>
+<summary>Closed but not merged — click to expand the full record</summary>
+
+_Raised and reviewed, then closed without merging (e.g. superseded or withdrawn)._
+
+<!--START_SECTION:closedprlist-->
+- [`QwenLM/qwen-code#13591`](https://github.com/QwenLM/qwen-code/pull/13591) — feat(cli): add /目标 as an alias for /goal
+- [`QwenLM/qwen-code#11934`](https://github.com/QwenLM/qwen-code/pull/11934) — fix(cli): pin review agents to the PR worktree
+<!--END_SECTION:closedprlist-->
+
+</details>
 
 ---
 
