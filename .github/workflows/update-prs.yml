@@ -2,8 +2,8 @@ name: Update profile README
 
 on:
   schedule:
-    # Every 6 hours.
-    - cron: '23 */6 * * *'
+    # Every hour.
+    - cron: '23 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
