@@ -45,9 +45,9 @@ _Automatically updated from the GitHub API — most recently updated merged PRs 
 _Submitted and awaiting review._
 
 <!--START_SECTION:openprlist-->
+- [`QwenLM/qwen-code#13968`](https://github.com/QwenLM/qwen-code/pull/13968) — fix(web-shell): inset the right edge of a label-only composer chip
 - [`QwenLM/qwen-code#11807`](https://github.com/QwenLM/qwen-code/pull/11807) — fix(cli): strip UTF-8 BOM before parsing settings.json to avoid false corruption reset
 - [`QwenLM/qwen-code#13972`](https://github.com/QwenLM/qwen-code/pull/13972) — fix(web-shell): neutralise controls in the generic approval content block
-- [`QwenLM/qwen-code#13968`](https://github.com/QwenLM/qwen-code/pull/13968) — fix(web-shell): inset the right edge of a label-only composer chip
 <!--END_SECTION:openprlist-->
 
 ## 🗂️ Closed Without Merge
