@@ -47,9 +47,9 @@ _Automatically updated from the GitHub API — most recently updated merged PRs 
 _Submitted and awaiting review._
 
 <!--START_SECTION:openprlist-->
-- [`QwenLM/qwen-code#14677`](https://github.com/QwenLM/qwen-code/pull/14677) — fix(core): forfeit the analyzer HOME for a bare `cd` after HOME is reassigned
-- [`QwenLM/qwen-code#14676`](https://github.com/QwenLM/qwen-code/pull/14676) — fix(sdk-typescript): bound a session spawn whose deadline overflowed the timer ceiling
 - [`QwenLM/qwen-code#14670`](https://github.com/QwenLM/qwen-code/pull/14670) — fix(core): split shell commands on bash's separators, not JavaScript whitespace
+- [`QwenLM/qwen-code#14676`](https://github.com/QwenLM/qwen-code/pull/14676) — fix(sdk-typescript): bound a session spawn whose deadline overflowed the timer ceiling
+- [`QwenLM/qwen-code#14677`](https://github.com/QwenLM/qwen-code/pull/14677) — fix(core): forfeit the analyzer HOME for a bare `cd` after HOME is reassigned
 - [`QwenLM/qwen-code#11807`](https://github.com/QwenLM/qwen-code/pull/11807) — fix(cli): strip UTF-8 BOM before parsing settings.json to avoid false corruption reset
 <!--END_SECTION:openprlist-->
 
