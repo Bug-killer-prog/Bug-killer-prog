@@ -5,7 +5,7 @@
 Open-source enthusiast · automated bug-hunting with small, focused, well-tested fixes
 
 <!--START_SECTION:prstats-->
-![Merged PRs](https://img.shields.io/badge/Merged%20PRs-0-brightgreen)
+![Merged PRs](https://img.shields.io/badge/Merged%20PRs-9-brightgreen)
 ![Open PRs](https://img.shields.io/badge/Open%20PRs-4-blue)
 ![Total PRs](https://img.shields.io/badge/Total%20PRs-15-lightgrey)
 <!--END_SECTION:prstats-->
@@ -30,7 +30,15 @@ Open-source enthusiast · automated bug-hunting with small, focused, well-tested
 _Automatically updated from the GitHub API — most recently updated merged PRs first._
 
 <!--START_SECTION:prlist-->
-_Nothing here yet._
+- [`QwenLM/qwen-code#13972`](https://github.com/QwenLM/qwen-code/pull/13972) — fix(web-shell): neutralise controls in the generic approval content block
+- [`QwenLM/qwen-code#13968`](https://github.com/QwenLM/qwen-code/pull/13968) — fix(web-shell): inset the right edge of a label-only composer chip
+- [`QwenLM/qwen-code#13975`](https://github.com/QwenLM/qwen-code/pull/13975) — fix(core): strip a leading BOM before converting a TOML command
+- [`QwenLM/qwen-code#13971`](https://github.com/QwenLM/qwen-code/pull/13971) — fix(web-shell): hide the discontinued built-in OAuth model in Settings
+- [`QwenLM/qwen-code#13711`](https://github.com/QwenLM/qwen-code/pull/13711) — fix(cli): strip UTF-8 BOM when importing Claude MCP configs
+- [`QwenLM/qwen-code#13596`](https://github.com/QwenLM/qwen-code/pull/13596) — fix(cli): strip UTF-8 BOM when reading MCP config files
+- [`QwenLM/qwen-code#13198`](https://github.com/QwenLM/qwen-code/pull/13198) — fix(cli): make vim-mode clipboard paste work on Windows
+- [`QwenLM/qwen-code#13196`](https://github.com/QwenLM/qwen-code/pull/13196) — test(integration): make the utf-bom defaultFileEncoding test deterministic
+- [`QwenLM/qwen-code#11750`](https://github.com/QwenLM/qwen-code/pull/11750) — test(core): account for the extra Windows fstat in the tail-growth session mocks
 <!--END_SECTION:prlist-->
 
 ## 🔧 Open Pull Requests
