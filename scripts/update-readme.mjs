@@ -69,14 +69,31 @@ function replaceSection(content, name, body) {
   return content.replace(pattern, `${start}\n${body}\n${end}`);
 }
 
+// The counters are rendered as shields.io "dynamic/json" badges that call the
+// GitHub search API themselves, so they stay correct even when GitHub throttles
+// this workflow's schedule (low-activity repositories are delayed by hours). A
+// static shields badge would freeze whatever count the last run happened to see.
+function dynamicBadge(label, query, color) {
+  const target = `https://api.github.com/search/issues?q=${encodeURIComponent(
+    query,
+  ).replace(/%20/g, '+')}&per_page=1`;
+  const params = new URLSearchParams({
+    url: target,
+    query: '$.total_count',
+    label,
+    color,
+  });
+  return `![${label}](https://img.shields.io/badge/dynamic/json?${params})`;
+}
+
 const merged = await search(`author:${username} type:pr is:merged`);
 const open = await search(`author:${username} type:pr is:open`);
 const all = await search(`author:${username} type:pr`, 1);
 
 const stats = [
-  `![Merged PRs](https://img.shields.io/badge/Merged%20PRs-${merged.total_count}-brightgreen)`,
-  `![Open PRs](https://img.shields.io/badge/Open%20PRs-${open.total_count}-blue)`,
-  `![Total PRs](https://img.shields.io/badge/Total%20PRs-${all.total_count}-lightgrey)`,
+  dynamicBadge('Merged PRs', `author:${username} type:pr is:merged`, 'brightgreen'),
+  dynamicBadge('Open PRs', `author:${username} type:pr is:open`, 'blue'),
+  dynamicBadge('Total PRs', `author:${username} type:pr`, 'lightgrey'),
 ].join('\n');
 
 let readme = await readFile(readmePath, 'utf8');

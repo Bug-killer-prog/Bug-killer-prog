@@ -5,9 +5,9 @@
 Open-source enthusiast · automated bug-hunting with small, focused, well-tested fixes
 
 <!--START_SECTION:prstats-->
-![Merged PRs](https://img.shields.io/badge/Merged%20PRs-9-brightgreen)
-![Open PRs](https://img.shields.io/badge/Open%20PRs-6-blue)
-![Total PRs](https://img.shields.io/badge/Total%20PRs-17-lightgrey)
+![Merged PRs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253ABug-killer-prog%2Btype%253Apr%2Bis%253Amerged%26per_page%3D1&query=%24.total_count&label=Merged+PRs&color=brightgreen)
+![Open PRs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253ABug-killer-prog%2Btype%253Apr%2Bis%253Aopen%26per_page%3D1&query=%24.total_count&label=Open+PRs&color=blue)
+![Total PRs](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%253ABug-killer-prog%2Btype%253Apr%26per_page%3D1&query=%24.total_count&label=Total+PRs&color=lightgrey)
 <!--END_SECTION:prstats-->
 
 </div>
@@ -56,4 +56,4 @@ _Submitted and awaiting review._
 
 ---
 
-<sub>This README refreshes itself every 6 hours via <a href=".github/workflows/update-prs.yml">GitHub Actions</a> (workflow <code>update-prs.yml</code>, script <code>scripts/update-readme.mjs</code>).</sub>
+<sub>The lists above are rewritten by <a href=".github/workflows/update-prs.yml">GitHub Actions</a> (workflow <code>update-prs.yml</code>, script <code>scripts/update-readme.mjs</code>), nominally once an hour — GitHub delays scheduled runs on low-activity repositories, so allow a few hours. The three counters are <code>shields.io</code> dynamic badges that query the GitHub API themselves, so they are always current.</sub>
