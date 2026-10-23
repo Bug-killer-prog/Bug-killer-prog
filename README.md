@@ -6,8 +6,8 @@ Open-source enthusiast · automated bug-hunting with small, focused, well-tested
 
 <!--START_SECTION:prstats-->
 ![Merged PRs](https://img.shields.io/badge/Merged%20PRs-9-brightgreen)
-![Open PRs](https://img.shields.io/badge/Open%20PRs-4-blue)
-![Total PRs](https://img.shields.io/badge/Total%20PRs-15-lightgrey)
+![Open PRs](https://img.shields.io/badge/Open%20PRs-6-blue)
+![Total PRs](https://img.shields.io/badge/Total%20PRs-17-lightgrey)
 <!--END_SECTION:prstats-->
 
 </div>
@@ -46,6 +46,8 @@ _Automatically updated from the GitHub API — most recently updated merged PRs 
 _Submitted and awaiting review._
 
 <!--START_SECTION:openprlist-->
+- [`QwenLM/qwen-code#15294`](https://github.com/QwenLM/qwen-code/pull/15294) — test(cli): restore the QWEN_HOME pin that settings.test.ts drops
+- [`QwenLM/qwen-code#15293`](https://github.com/QwenLM/qwen-code/pull/15293) — fix(core): stop a failed queued memory extract escaping as an unhandled rejection
 - [`QwenLM/qwen-code#14677`](https://github.com/QwenLM/qwen-code/pull/14677) — fix(core): treat a reassigned HOME as dynamic for cd and ~ targets
 - [`QwenLM/qwen-code#14670`](https://github.com/QwenLM/qwen-code/pull/14670) — fix(core): split shell commands on bash's separators, not JavaScript whitespace
 - [`QwenLM/qwen-code#14676`](https://github.com/QwenLM/qwen-code/pull/14676) — fix(sdk-typescript): clamp an overflowing session-spawn deadline to the timer ceiling
