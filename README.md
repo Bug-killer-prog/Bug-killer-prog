@@ -46,8 +46,8 @@ _Automatically updated from the GitHub API — most recently updated merged PRs 
 _Submitted and awaiting review._
 
 <!--START_SECTION:openprlist-->
-- [`QwenLM/qwen-code#15358`](https://github.com/QwenLM/qwen-code/pull/15358) — fix(cli): report max session turns in the JSON result instead of replaying the last answer
 - [`QwenLM/qwen-code#15359`](https://github.com/QwenLM/qwen-code/pull/15359) — test(serve): give the read-profile status wait a 10s budget
+- [`QwenLM/qwen-code#15358`](https://github.com/QwenLM/qwen-code/pull/15358) — fix(cli): report max session turns in the JSON result instead of replaying the last answer
 - [`QwenLM/qwen-code#15294`](https://github.com/QwenLM/qwen-code/pull/15294) — test(cli): restore the QWEN_HOME pin that settings.test.ts drops
 - [`QwenLM/qwen-code#15293`](https://github.com/QwenLM/qwen-code/pull/15293) — fix(core): stop a failed queued memory extract escaping as an unhandled rejection
 - [`QwenLM/qwen-code#14677`](https://github.com/QwenLM/qwen-code/pull/14677) — fix(core): treat a reassigned HOME as dynamic for cd and ~ targets
