@@ -46,11 +46,11 @@ _Automatically updated from the GitHub API — most recently updated merged PRs 
 _Submitted and awaiting review._
 
 <!--START_SECTION:openprlist-->
+- [`QwenLM/qwen-code#15294`](https://github.com/QwenLM/qwen-code/pull/15294) — test(cli): restore the QWEN_HOME pin that settings.test.ts drops
 - [`QwenLM/qwen-code#14677`](https://github.com/QwenLM/qwen-code/pull/14677) — fix(core): treat a reassigned HOME as dynamic for cd and ~ targets
 - [`QwenLM/qwen-code#14670`](https://github.com/QwenLM/qwen-code/pull/14670) — fix(core): split shell commands on bash's separators, not JavaScript whitespace
 - [`QwenLM/qwen-code#14676`](https://github.com/QwenLM/qwen-code/pull/14676) — fix(sdk-typescript): clamp an overflowing session-spawn deadline to the timer ceiling
 - [`QwenLM/qwen-code#11807`](https://github.com/QwenLM/qwen-code/pull/11807) — fix(cli): strip a UTF-8 BOM in the daemon trust and companion settings readers
-- [`QwenLM/qwen-code#15294`](https://github.com/QwenLM/qwen-code/pull/15294) — test(cli): restore the QWEN_HOME pin that settings.test.ts drops
 - [`QwenLM/qwen-code#15358`](https://github.com/QwenLM/qwen-code/pull/15358) — fix(cli): report max session turns in the JSON result instead of replaying the last answer
 <!--END_SECTION:openprlist-->
 
